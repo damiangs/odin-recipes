@@ -1,0 +1,91 @@
+/* 1. Use a more intuitive box model universally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins for complete layout control */
+* {
+  margin: 0;
+}
+
+/* 3. Improve default line-height and text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Improve media element behavior */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Inherit typography rules for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflow issues on long words */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#title {
+  text-align: center;
+  margin: 5px;
+  padding: 15px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#recipes {
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+#recipes li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px;
+  margin: 12px;
+}
+
+#recipes img {
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#recipes a {
+  padding: 5px;
+  font-size: 12 px;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+}
+
+#recipes a:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
